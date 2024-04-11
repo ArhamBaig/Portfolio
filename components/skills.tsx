@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
@@ -30,10 +30,10 @@ export default function Skills() {
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>My skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 select-none">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="flex justify-center items-center gap-2 bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/20 dark:text-white/80"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -43,7 +43,7 @@ export default function Skills() {
             }}
             custom={index}
           >
-            {skill}
+            <Image src={skill.image} alt={skill.name} width={100} height={100} className="w-6 h-6"/>{skill.name}
           </motion.li>
         ))}
       </ul>
