@@ -1,6 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { GoBook } from "react-icons/go";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
@@ -27,52 +27,54 @@ export const links = [
     name: "Experience",
     hash: "#experience",
   },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Aga Khan Higher Secondary School",
+    location: "Karachi, Pakistan",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated after 2 years of studying Pre-Engineering.",
+    icon: React.createElement(GoBook),
+    date: "2017 - 2019",
+  },
+  {
+    title: "Usman Institute of Technology",
+    location: "Karachi, Pakistan",
+    description:
+      "I successfully completed my Bachelor's in Software Engineering. I immediately got a job offer as a Front-end developer.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2019 - 2023",
   },
   {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "Karachi, Pakistan",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I'm now a front-end developer working in a reputable company. My stack includes React, Next.js, Javascript, TypeScript, Tailwind Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "PPV Live Streaming Platform",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "Users can upload exclusive content that can be accessed through cryptocurrency. They can live stream too.",
     tags: [
-      "/react.svg",
-      "/next.png",
-      "/mongodb.png",
-      "/tailwind.png",
+      "/html.png",
+      "/css.png",
+      "/bootstrap.png",
       "/js.png",
+      "/node.png",
+      "/express.png",
+      "/mongodb.png",
+     
+      "/ejs.png"
     ],
-    imageUrl: corpcommentImg,
+    imageUrl: "/ppv-streaming-platform.png",
+    github:"https://github.com/ArhamBaig/Pay-per-view-streaming-platform"
   },
   // {
   //   title: "rmtDev",
