@@ -43,7 +43,7 @@ export default function Skills() {
             }}
             custom={index}
           >
-            <Image src={skill.image} alt={skill.name} width={100} height={100} className="w-6 h-6"/>{skill.name}
+            <Image src={skill.image} alt={skill.name} width={100} height={100} className="w-6 h-6 object-contain"/>{skill.name}
           </motion.li>
         ))}
       </ul>

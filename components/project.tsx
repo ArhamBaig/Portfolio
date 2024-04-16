@@ -44,7 +44,7 @@ export default function Project({
           <ul className="flex flex-wrap mt-4 sm:mt-auto">
             {tags.map((tag, index) => (
               <Image
-                className="w-8 h-8 p-[3px] rounded-lg "
+                className="w-8 h-8 p-[3px] rounded-lg object-contain"
                 key={index}
                 src={tag}
                 alt={"technology icon"}
