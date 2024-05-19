@@ -92,5 +92,6 @@ export const skillsData = [
   { name: "Express", image: "/express.png" },
   { name: "AWS", image: "/aws.png"},
   { name: "shadcn", image: "/shadcn.png" },
-  { name: "Material UI", image: "/material-ui.svg"}
+  { name: "Material UI", image: "/material-ui.svg"},
+  { name: "Framer Motion", image: "/framer-motion.svg"},
 ] as const;
